@@ -95,6 +95,7 @@ public class IASRootLoginAction {
 
 	public void logout(HttpServletRequest request) throws ServletException {
 		request.logout();
+		request.getSession().invalidate();
 	}
 
 }

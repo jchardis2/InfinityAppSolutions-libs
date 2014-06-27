@@ -1,22 +1,41 @@
 package com.infinityappsolutions.lib.webvideo.beans;
 
 public class VideoBean {
-	private long id;
-	private String name;
-	private String type;
-	private String url;
-	private String file;
+	protected long id;
+	protected long videofolderid;
+	protected String name;
+	protected String type;
+	protected String url;
+	protected String file;
+	protected String hash;
+	protected String imageurl;
 
 	public VideoBean() {
 	}
 
-	public VideoBean(long id, String name, String type, String url, String file) {
+	// public VideoBean(long id, String name, String type, String url,
+	// String file, String hash, String imageurl) {
+	// super();
+	// this.id = id;
+	// this.name = name;
+	// this.type = type;
+	// this.url = url;
+	// this.file = file;
+	// this.hash = hash;
+	// this.imageurl = imageurl;
+	// }
+
+	public VideoBean(long id, long videofolderid, String name, String type,
+			String url, String file, String hash, String imageurl) {
 		super();
 		this.id = id;
+		this.videofolderid = videofolderid;
 		this.name = name;
 		this.type = type;
 		this.url = url;
 		this.file = file;
+		this.hash = hash;
+		this.imageurl = imageurl;
 	}
 
 	public long getId() {
@@ -25,6 +44,14 @@ public class VideoBean {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public long getVideofolderid() {
+		return videofolderid;
+	}
+
+	public void setVideofolderid(long videofolderid) {
+		this.videofolderid = videofolderid;
 	}
 
 	public String getName() {
@@ -57,6 +84,22 @@ public class VideoBean {
 
 	public void setFile(String file) {
 		this.file = file;
+	}
+
+	public String getHash() {
+		return hash;
+	}
+
+	public void setHash(String hash) {
+		this.hash = hash;
+	}
+
+	public String getImageurl() {
+		return imageurl;
+	}
+
+	public void setImageurl(String imageurl) {
+		this.imageurl = imageurl;
 	}
 
 }

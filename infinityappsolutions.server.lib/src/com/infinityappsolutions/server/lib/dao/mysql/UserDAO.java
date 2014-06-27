@@ -163,7 +163,7 @@ public class UserDAO {
 	 * @return A UserBean representing the user.
 	 * @throws DBException
 	 */
-	public UserBean getPatientByID(long id) throws DBException {
+	public UserBean getUserByID(long id) throws DBException {
 		Connection conn = null;
 		PreparedStatement ps = null;
 		try {

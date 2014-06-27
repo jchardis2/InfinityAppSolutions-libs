@@ -17,7 +17,7 @@ import org.eclipse.jetty.server.Authentication;
 import org.eclipse.jetty.server.UserIdentity;
 import org.eclipse.jetty.util.URIUtil;
 
-import com.infinityappsolutions.server.lib.security.SecureHashUtil;
+import com.infinityappsolutions.lib.security.SecureHashUtil;
 
 public class IASLoginAuthenticator extends FormAuthenticator {
 
@@ -28,6 +28,7 @@ public class IASLoginAuthenticator extends FormAuthenticator {
 
 	public IASLoginAuthenticator(String login, String error, boolean dispatch) {
 		super(login, error, dispatch);
+		
 		// TODO Auto-generated constructor stub
 	}
 

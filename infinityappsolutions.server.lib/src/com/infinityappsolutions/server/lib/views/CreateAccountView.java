@@ -6,11 +6,11 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 
 import com.infinityappsolutions.lib.beans.UserBean;
+import com.infinityappsolutions.lib.security.SecureHashUtil;
 import com.infinityappsolutions.server.lib.actions.IASRootCreateAccountAction;
 import com.infinityappsolutions.server.lib.dao.AbstractDAOFactory;
 import com.infinityappsolutions.server.lib.exceptions.DBException;
 import com.infinityappsolutions.server.lib.log.Logger;
-import com.infinityappsolutions.server.lib.security.SecureHashUtil;
 
 public class CreateAccountView extends UserBean {
 	private static final long serialVersionUID = -3082634691614062475L;
